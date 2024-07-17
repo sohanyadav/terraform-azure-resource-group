@@ -5,10 +5,10 @@ provider "azurerm" {
 module "resource_group" {
   source = "../"
 
-  environment = "-resource-group"
+  environment = "-example"
   label_order = ["name", "environment", ]
 
-  name     = "OpsStation"
+  name     = "rg"
   location = "North Europe"
 
   #resource lock
