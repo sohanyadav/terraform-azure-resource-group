@@ -71,9 +71,9 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## Modules
 
-| Name | Source                                                        | Version |
-|------|---------------------------------------------------------------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/sohanyadav/terraform-azure-labels.git | master  |
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/sohanyadav/terraform-azure-labels.git | vmaster |
 
 ## Resources
 
@@ -84,21 +84,21 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## Inputs
 
-| Name | Description                                                                                                    | Type | Default                                                          | Required |
-|------|----------------------------------------------------------------------------------------------------------------|------|------------------------------------------------------------------|:--------:|
-| <a name="input_create"></a> [create](#input\_create) | Used when creating the Resource Group                                                                          | `string` | `"30m"`                                                          | no |
-| <a name="input_delete"></a> [delete](#input\_delete) | Used when deleting the Resource Group                                                                          | `string` | `"70m"`                                                          | no |
-| <a name="input_enabled"></a> [enabled](#input\_enabled) | Flag to control the module creation                                                                            | `bool` | `true`                                                           | no |
-| <a name="input_environment"></a> [environment](#input\_environment) | Environment (e.g. `prod`, `dev`, `staging`).                                                                   | `string` | `"-example"`                                                     | no |
-| <a name="input_label_order"></a> [label\_order](#input\_label\_order) | Label order, e.g. `name`,`application`.                                                                        | `list(any)` | <pre>[<br>  "name",<br>  "environment"<br>]</pre>                | no |
-| <a name="input_location"></a> [location](#input\_location) | Location where resource should be created                                                                      | `string` | `"West Europe"`                                                  | no |
-| <a name="input_lock_level"></a> [lock\_level](#input\_lock\_level) | n/a                                                                                                            | `string` | `"CanNotDelete"`                                                 | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManageBY, eg, 'sohanyadav'  | `string` | `"sohanyadav"`                                                   | no |                                                                                    | `string` | `"sohanyadav"`                                                   | no |
-| <a name="input_name"></a> [name](#input\_name) | The Name which should be used for this Resource Group.Changing this forces a new Resource Group to be created. | `string` | `"resource-group"`                                               | no |
-| <a name="input_read"></a> [read](#input\_read) | Used when retrieving the Resource Group                                                                        | `string` | `"90m"`                                                          | no |
-| <a name="input_repository"></a> [repository](#input\_repository) | Terraform current module repo                                                                                  | `string` | `"https://github.com/sohanyadav/terraform-azure-resource-group"` | no |
-| <a name="input_resource_lock_enabled"></a> [resource\_lock\_enabled](#input\_resource\_lock\_enabled) | enable or disable lock resource                                                                                | `bool` | `false`                                                          | no |
-| <a name="input_update"></a> [update](#input\_update) | Used when updating the Resource Group                                                                          | `string` | `"50m"`                                                          | no |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_create"></a> [create](#input\_create) | Used when creating the Resource Group | `string` | `"30m"` | no |
+| <a name="input_delete"></a> [delete](#input\_delete) | Used when deleting the Resource Group | `string` | `"70m"` | no |
+| <a name="input_enabled"></a> [enabled](#input\_enabled) | Flag to control the module creation | `bool` | `true` | no |
+| <a name="input_environment"></a> [environment](#input\_environment) | Environment (e.g. `prod`, `dev`, `staging`). | `string` | `"-example"` | no |
+| <a name="input_label_order"></a> [label\_order](#input\_label\_order) | Label order, e.g. `name`,`application`. | `list(any)` | <pre>[<br>  "name",<br>  "environment"<br>]</pre> | no |
+| <a name="input_location"></a> [location](#input\_location) | Location where resource should be created | `string` | `"West Europe"` | no |
+| <a name="input_lock_level"></a> [lock\_level](#input\_lock\_level) | n/a | `string` | `"CanNotDelete"` | no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManageBY, eg, 'sohanyadav' | `string` | `"sohanyadav"` | no |
+| <a name="input_name"></a> [name](#input\_name) | The Name which should be used for this Resource Group.Changing this forces a new Resource Group to be created. | `string` | `"resource-group"` | no |
+| <a name="input_read"></a> [read](#input\_read) | Used when retrieving the Resource Group | `string` | `"90m"` | no |
+| <a name="input_repository"></a> [repository](#input\_repository) | Terraform current module repo | `string` | `"https://github.com/sohanyadav/terraform-azure-resource-group"` | no |
+| <a name="input_resource_lock_enabled"></a> [resource\_lock\_enabled](#input\_resource\_lock\_enabled) | enable or disable lock resource | `bool` | `false` | no |
+| <a name="input_update"></a> [update](#input\_update) | Used when updating the Resource Group | `string` | `"50m"` | no |
 
 ## Outputs
 
